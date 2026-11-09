@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - xiaohe
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
+  type: vless
+  server: 81.181.166.197
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  uuid: affb10d4-3835-4b1f-b5a3-3481489911b6
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cat.ilovezhenjiu.top
+  network: ws
+  ws-opts:
+    path: /cgciws
+    headers:
+      Host: cat.ilovezhenjiu.top
 - name: 🇷🇴 RO 02 - xiaohe
   type: ss
   server: 194.68.44.42
